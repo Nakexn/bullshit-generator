@@ -46,17 +46,11 @@
         color: #eee;
       }
       main {
-        padding-bottom: 40px;
+        padding-bottom: 24px;
       }
       section {
         text-indent: 3rem;
         padding: 10px 0;
-      }
-      footer {
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-        background-color: white;
       }
       @media screen and (max-width: 480px) {
         .title span {
@@ -84,7 +78,11 @@
           最大字数：<input id="max" type="range" min="1000" max="10000" step="100" value="5000" /><span>5000</span>
         </div>
       </div>
-      <div class="ref"><a href="https://github.com/menzi11/BullshitGenerator">原版</a></div>
+      <div class="ref">
+        <a href="https://github.com/menzi11/BullshitGenerator">原版</a>
+        <a href="https://github.com/akira-cn/bullshit-generator-js">月影改进版</a>
+      </div>
+      <div class="ref"></div>
       <div class="title">
         <span>标题：</span><input id="title" type="text" value="" />
         <button id="generate">生成</button>
@@ -94,9 +92,6 @@
     <main>
       <article></article>
     </main>
-    <footer>
-      改进版：<a href="https://github.com/akira-cn/bullshit-generator-js">bullshit-generator-js</a> 作者：月影
-    </footer>
     <script src="https://nargb.com/bullshit-generator/dist/index.js"></script>
     <script>
       const { generate, createRandomPicker, loadCorpus } = bullshitGenerator;
